@@ -1,0 +1,14 @@
+$(function(){
+	$('#ybus-form').ybusForm({
+		'dataPath' : 'https://www.studentagency.cz/data/wc/ybus-form/data/ybus.cs.json',
+		'action': "https://jizdenky.regiojet.cz:443/Booking/",
+		'def' : [{"id":"destination_from","value":"Praha"},{"id":"destination_from_id","value":10202003},{"id":"destination_to","value":"Ostrava"},{"id":"destination_to_id","value":10202000},{"id":"departure_date","value":"25.09.2016"},{"id":"arrival_date","value":"25.09.2016"},{"id":"passengers","value":1},{"id":"tariffs","value":["REGULAR"]},{"id":"trip_type","value":"one_way"},{"id":"tip","value":false}],
+		'postInitHook' : function(component, context) {
+			$('#ybus-form').find('select').each(function() {
+					new Select({
+					el : this,
+					alignToHighlighted : 'always'
+				});
+			});
+		}
+	});

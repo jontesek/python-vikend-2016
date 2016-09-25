@@ -90,6 +90,3 @@ ENV/
 
 # PyCharms
 .idea/
-
-# Private notes
-private_notes.md

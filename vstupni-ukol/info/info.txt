@@ -1,0 +1,4 @@
+
+- windows spuštění:
+cd vstupni-ukol
+type test_inputs\small_data.csv | python find_combinations.py

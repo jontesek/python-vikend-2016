@@ -1,0 +1,6 @@
+Task description:
+
+Otázky:
+1. DPS -> USM -> HKT -> USM ... může být?
+2. Výstup JSON?
+
